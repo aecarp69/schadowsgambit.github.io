@@ -1,10 +1,9 @@
+/* Import Fantasy Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap');
+
 /* Base Styles */
 body {
   background-color: #1a1a1a;
-  background-image: url('../images/background-texture.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: #f0e6d2;
   font-family: 'Cinzel', serif;
   margin: 0;
@@ -14,9 +13,9 @@ body {
 /* Container Styling */
 .border-container {
   position: relative;
-  padding: 50px;
+  padding: 50px; /* Adjust to make space for corners */
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1200px; /* Center the content */
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -52,17 +51,21 @@ body {
   transform: scaleX(-1) scaleY(-1);
 }
 
-/* Edge Lines */
+/* Edge Lines (Optional) */
+/* Uncomment if using edge lines */
+/*
 .edge {
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: 5;
 }
 
 .edge-top,
 .edge-bottom {
-  left: 150px;
   width: calc(100% - 300px);
   height: 5px;
+  left: 150px;
   background: linear-gradient(to right, rgba(90, 90, 90, 1), rgba(90, 90, 90, 0));
 }
 
@@ -77,9 +80,9 @@ body {
 
 .edge-left,
 .edge-right {
-  top: 150px;
   width: 5px;
   height: calc(100% - 300px);
+  top: 150px;
   background: linear-gradient(to bottom, rgba(90, 90, 90, 1), rgba(90, 90, 90, 0));
 }
 
@@ -91,12 +94,27 @@ body {
   right: 0;
   transform: scaleX(-1);
 }
+*/
 
 /* Header Image */
 header img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+}
+
+/* Gallery Section */
+#gallery {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#gallery img {
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+  border: 2px solid #f0e6d2;
 }
 
 /* Navigation */
@@ -119,12 +137,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #d12238;
+  color: #b22222;
 }
 
-/* Runic Text Example */
-.runic-text {
-  font-family: 'Noto Sans Runic', serif;
-  color: #d12238;
-  font-size: 24px;
+/* Additional Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Uncial Antiqua', serif;
 }
