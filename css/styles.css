@@ -32,6 +32,7 @@ body {
 .corner-top-left {
   top: 0;
   left: 0;
+  /* Flip vertically to correct orientation */
   transform: scaleY(-1);
 }
 
@@ -39,6 +40,7 @@ body {
 .corner-top-right {
   top: 0;
   right: 0;
+  /* Flip both horizontally and vertically */
   transform: scaleX(-1) scaleY(-1);
 }
 
@@ -46,15 +48,18 @@ body {
 .corner-bottom-left {
   bottom: 0;
   left: 0;
-  /* No transform needed */
+  /* Flip horizontally */
+  transform: scaleX(1);
 }
 
 /* Bottom Right Corner */
 .corner-bottom-right {
   bottom: 0;
   right: 0;
+  /* Flip horizontally */
   transform: scaleX(-1);
 }
+
 
 /* Edge Lines (Optional) */
 /* Uncomment if using edge lines */
