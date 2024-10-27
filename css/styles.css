@@ -28,27 +28,32 @@ body {
   z-index: 10;
 }
 
+/* Top Left Corner */
 .corner-top-left {
   top: 0;
-  left: 0;
-}
-
-.corner-top-right {
-  top: 0;
-  right: 0;
-  transform: scaleX(-1);
-}
-
-.corner-bottom-left {
-  bottom: 0;
   left: 0;
   transform: scaleY(-1);
 }
 
+/* Top Right Corner */
+.corner-top-right {
+  top: 0;
+  right: 0;
+  transform: scaleX(-1) scaleY(-1);
+}
+
+/* Bottom Left Corner */
+.corner-bottom-left {
+  bottom: 0;
+  left: 0;
+  /* No transform needed */
+}
+
+/* Bottom Right Corner */
 .corner-bottom-right {
   bottom: 0;
   right: 0;
-  transform: scaleX(-1) scaleY(-1);
+  transform: scaleX(-1);
 }
 
 /* Edge Lines (Optional) */
